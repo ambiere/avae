@@ -9,10 +9,10 @@
   "scripts": {
     "lint": "standard --verbose",
     "lint:fix": "standard --fix",
-    "test": "nyc tap \"test/**/*.test.js\" --check-coverage",
+    "test": "nyc tap \"test/**/*.test.js\" -- --no-check-coverage",
     "version": "cz bump",
     "relit": "relit create --count 1",
-    "post:version": "conventional-changelog -p angular -i CHANGELOG.md -s -r 1 && git add CHANGELOG.md",
+    "post:version": "conventional-changelog -p conventionalCommits -i CHANGELOG.md -s -r 0 && git add CHANGELOG.md",
     "prepare": "node .husky/install.js"
   },
   "engines": {
@@ -45,6 +45,8 @@
   "homepage": "https://github.com/zhid0399123/relit#readme",
   "devDependencies": {
     "husky": "^9.0.7",
-    "lint-staged": "^15.2.0"
+    "lint-staged": "^15.2.0",
+    "nyc": "^15.1.0",
+    "tap": "^18.7.0"
   }
 }

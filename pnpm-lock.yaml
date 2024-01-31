@@ -1,0 +1,65 @@
+lockfileVersion: '6.0'
+
+settings:
+  autoInstallPeers: true
+  excludeLinksFromLockfile: false
+
+dependencies:
+  '@zhid0399123/relit':
+    specifier: ^0.0.1
+    version: 0.0.1
+  commist:
+    specifier: ^3.2.0
+    version: 3.2.0
+  help-me:
+    specifier: ^5.0.0
+    version: 5.0.0
+  split2:
+    specifier: ^4.2.0
+    version: 4.2.0
+  yargs-parser:
+    specifier: ^21.1.1
+    version: 21.1.1
+
+packages:
+
+  /@zhid0399123/relit@0.0.0:
+    resolution: {integrity: sha512-BDAaGiTiXcBDxRaAEW2HdIfwFoDzbC7y0MY7MQ8+lDpjrN6K3vRGBICbvN+d1UiuvripjcgWUHDpn/M2kGHuEQ==}
+    engines: {node: '>=20', npm: 10.2.4, pnpm: 8.14.3}
+    hasBin: true
+    dependencies:
+      commist: 3.2.0
+      help-me: 5.0.0
+      split2: 4.2.0
+      yargs-parser: 21.1.1
+    dev: false
+
+  /@zhid0399123/relit@0.0.1:
+    resolution: {integrity: sha512-t1ycsA910xf8QN4QYnKzZ7LT0tmqQQZRIQts6VBUf84NHqvI7wMPgKAMMocyxe9Fm8NGrs/CHvIlDLwLFQn8sA==}
+    engines: {node: '>=20', npm: 10.2.4, pnpm: 8.14.3}
+    hasBin: true
+    dependencies:
+      '@zhid0399123/relit': 0.0.0
+      commist: 3.2.0
+      help-me: 5.0.0
+      split2: 4.2.0
+      yargs-parser: 21.1.1
+    dev: false
+
+  /commist@3.2.0:
+    resolution: {integrity: sha512-4PIMoPniho+LqXmpS5d3NuGYncG6XWlkBSVGiWycL22dd42OYdUGil2CWuzklaJoNxyxUSpO4MKIBU94viWNAw==}
+    dev: false
+
+  /help-me@5.0.0:
+    resolution: {integrity: sha512-7xgomUX6ADmcYzFik0HzAxh/73YlKR9bmFzf51CZwR+b6YtzU2m0u49hQCqV6SvlqIqsaxovfwdvbnsw3b/zpg==}
+    dev: false
+
+  /split2@4.2.0:
+    resolution: {integrity: sha512-UcjcJOWknrNkF6PLX83qcHM6KHgVKNkV62Y8a5uYDVv9ydGQVwAHMKqHdJje1VTWpljG0WYpCDhrCdAOYH4TWg==}
+    engines: {node: '>= 10.x'}
+    dev: false
+
+  /yargs-parser@21.1.1:
+    resolution: {integrity: sha512-tVpsJW7DdjecAiFpbIB1e3qxIQsE6NoPc5/eTdrbbIC4h0LVsWhnoa3g+m2HclBIujHzsxZ4VJVA+GUuc2/LBw==}
+    engines: {node: '>=12'}
+    dev: false

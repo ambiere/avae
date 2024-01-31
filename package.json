@@ -16,9 +16,7 @@
     "prepare": "node .husky/install.js"
   },
   "engines": {
-    "node": ">=20",
-    "npm": "10.2.4",
-    "pnpm": "8.14.3"
+    "node": ">=20"
   },
   "keywords": [
     "releases",

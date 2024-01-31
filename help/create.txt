@@ -1,0 +1,11 @@
+Usage: relit create [OPTS...]
+
+Generate release notes/text from changelog file.
+
+OPTS
+
+ --read|| -r <filename>:      Specify the dir/filename from which relit should read from.
+ --out|| -o <filename>:       Specify the dir/filename to which relit should output/write. 
+ --count|| -c <number>:       Specify the number of releases that should be written to the output file.
+
+   

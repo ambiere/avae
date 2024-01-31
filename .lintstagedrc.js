@@ -1,3 +1,3 @@
 module.exports = {
-  "*": "pnpm run lint:fix",
+  "*/**": "pnpm run lint:fix",
 }

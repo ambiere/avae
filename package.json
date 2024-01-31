@@ -12,7 +12,7 @@
     "test": "nyc tap \"test/**/*.test.js\" -- --no-check-coverage",
     "version": "cz bump",
     "relit": "relit create --count 1",
-    "post:version": "conventional-changelog -p conventionalCommits -i CHANGELOG.md -s -r 0 && git add CHANGELOG.md",
+    "post:version": "conventional-changelog -p conventionalCommits -i CHANGELOG.md -s -r 2 && git add CHANGELOG.md",
     "prepare": "node .husky/install.js"
   },
   "engines": {

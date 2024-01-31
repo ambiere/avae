@@ -16,7 +16,7 @@
     "prepare": "node .husky/install.js"
   },
   "engines": {
-    "node": ">=20"
+    "node": ">=18"
   },
   "keywords": [
     "releases",

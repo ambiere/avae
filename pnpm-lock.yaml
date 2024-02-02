@@ -11,6 +11,9 @@ dependencies:
   help-me:
     specifier: ^5.0.0
     version: 5.0.0
+  peni:
+    specifier: ^0.3.1
+    version: 0.3.1
   split2:
     specifier: ^4.2.0
     version: 4.2.0
@@ -1934,6 +1937,17 @@ packages:
       lru-cache: 10.2.0
       minipass: 7.0.4
     dev: true
+
+  /peni@0.3.1:
+    resolution: {integrity: sha512-nl4/oOJ7D1oaLr6NfjJlFJQcaIk9eY6Vt59nQvqotIMABsBBDpJDBM9c+IvB2DA024BQ2L2cyqljNrL4+WvDNg==}
+    engines: {node: '>=18'}
+    hasBin: true
+    dependencies:
+      commist: 3.2.0
+      help-me: 5.0.0
+      split2: 4.2.0
+      yargs-parser: 21.1.1
+    dev: false
 
   /picomatch@2.3.1:
     resolution: {integrity: sha512-JU3teHTNjmE2VCGFzuY8EXzCDVwEqB2a8fsIvwaStHhAWJEeVd1o1QD80CU6+ZdEXXSLbSsuLwJjkCBWqRQUVA==}

@@ -1,7 +1,7 @@
-relit command line interface available commands are:
+peni command line interface available commands are:
 
     * create    create release notes/text from CHANGELOG.md
-    * version   the current relit cli version
+    * version   the current peni cli version
     * help      help about commands
 
-Launch `relit help [command]` to learn more about each command. 
+Launch `peni help [command]` to learn more about each command. 

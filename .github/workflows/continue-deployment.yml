@@ -2,7 +2,7 @@ name: Publish
 
 on:
   workflow_run:
-    workflows: ["Test", "Release"]
+    workflows: ["Release"]
     types:
       - completed
 

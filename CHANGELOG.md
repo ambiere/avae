@@ -1,6 +1,7 @@
-## [0.3.1-beta]()/(2024-01-31)
+## [0.3.1-beta]()(2024-01-31)
 
-Initial beta release of `peni`. A npm package that streamline the generation of release notes from your changelog file effortlessly. See [changelog](https://github.com/zhid0399123/peni/blob/main/CHANGELOG.md).
+Initial beta release of `peni`.
+A npm package that streamline the generation of release notes from your changelog file effortlessly. See [changelog](https://github.com/zhid0399123/peni/blob/main/CHANGELOG.md).
 
 ## [0.3.1](https://github.com/zhid0399123/peni/compare/0.3.0...0.3.1) (2024-02-02)
 

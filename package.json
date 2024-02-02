@@ -1,17 +1,17 @@
 {
-  "name": "@zhid0399123/relit",
+  "name": "peni",
   "version": "0.3.0",
   "description": "Create release notes from changelog.md file",
   "main": "index.js",
   "bin": {
-    "relit": "src/bin.js"
+    "peni": "src/bin.js"
   },
   "scripts": {
     "lint": "standard --verbose",
     "lint:fix": "standard --fix",
-    "test": "nyc tap \"test/**/*.test.js\" -- --no-check-coverage",
+    "test": "tap test/**/*.test.js --allow-incomplete-coverage",
     "version": "cz bump",
-    "relit": "relit create --count 1",
+    "peni": "peni create --count 1",
     "post:version": "conventional-changelog -p conventionalCommits -i CHANGELOG.md -s -r 2 && git add CHANGELOG.md",
     "prepare": "node .husky/install.js"
   },
@@ -27,7 +27,6 @@
   "author": "zhid0399123 <zhid0399123@gmail.com>",
   "license": "MIT",
   "dependencies": {
-    "@zhid0399123/relit": "^0.0.1",
     "commist": "^3.2.0",
     "help-me": "^5.0.0",
     "split2": "^4.2.0",
@@ -35,16 +34,15 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/zhid0399123/relit.git"
+    "url": "git+https://github.com/zhid0399123/peni.git"
   },
   "bugs": {
-    "url": "https://github.com/zhid0399123/relit/issues"
+    "url": "https://github.com/zhid0399123/peni/issues"
   },
-  "homepage": "https://github.com/zhid0399123/relit#readme",
+  "homepage": "https://github.com/zhid0399123/peni#readme",
   "devDependencies": {
     "husky": "^9.0.7",
     "lint-staged": "^15.2.0",
-    "nyc": "^15.1.0",
     "tap": "^18.7.0"
   }
 }

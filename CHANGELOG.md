@@ -1,7 +1,11 @@
-## [0.1.0-beta]()(2024-01-31)
+# avae
 
-Initial beta release of `avae`.
-A npm package that streamline the generation of release notes from your changelog file effortlessly. See [changelog](https://github.com/zhid0399123/avae/blob/main/CHANGELOG.md).
+### [0.1.0-beta]() (2024-01-31)
+
+Initial beta release of `avae`.<br>
+A npm package that streamline the generation of release notes from your changelog file effortlessly. <br>
+
+> See [changelog](https://github.com/zhid0399123/avae/blob/main/CHANGELOG.md).
 
 ## [0.3.1](https://github.com/zhid0399123/avae/compare/0.3.0...0.3.1) (2024-02-02)
 

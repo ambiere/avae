@@ -7,7 +7,6 @@ Streamline the generation of release notes/text from your changelog file effortl
 [![Publish](https://github.com/zhid0399123/avae/actions/workflows/continue-deployment.yml/badge.svg)](https://github.com/zhid0399123/avae/actions/workflows/continue-deployment.yml)
 [![npm](https://img.shields.io/npm/v/avae.svg?style=flat-square&color=default)](https://www.npmjs.com/package/avae)
 [![npm](https://img.shields.io/npm/dt/avae.svg?style=flat-square&color=default)](https://www.npmjs.com/package/avae)
-[![License](https://img.shields.io/github/license/zhid0399123/avae.svg?style=flat-square&color=default)](https://opensource.org/licenses/MIT)
 [![js-standard-style](https://img.shields.io/badge/style-standard-brightgreen.svg?style=flat)](https://standardjs.com/)
 <br>
 

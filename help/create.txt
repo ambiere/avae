@@ -1,11 +1,11 @@
-Usage: peni create [OPTS...]
+Usage: avae create [OPTS...]
 
 Generate release notes/text from changelog file.
 
 OPTS
 
- --read<path> || -r<path>:      Specify the dir/filename path from which peni should read from.
- --out<path>|| -o<path>:       Specify the dir/filename path to which peni should output/write. 
+ --read<path> || -r<path>:      Specify the dir/filename path from which avae should read from.
+ --out<path>|| -o<path>:       Specify the dir/filename path to which avae should output/write. 
  --count<number>|| -c<number>:       Specify the number of releases that should be written to the output file.
 
    

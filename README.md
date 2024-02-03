@@ -1,55 +1,57 @@
-# peni
+# avae
 
-Streamline the generation of release notes/text from your changelog file effortlessly. Whether you're managing a large-scale project or a smaller development effort, `peni` empowers you to create professional and comprehensive release notes/text with ease. `peni` read the changelog file from top to bottom and create release file from it. `peni` relies on version tags in the changelog as the parsing boundary. The version tags should follow sermantic versioning (`vX.Y.Z`).
+Streamline the generation of release notes/text from your changelog file effortlessly. Whether you're managing a large-scale project or a smaller development effort, `avae` empowers you to create professional and comprehensive release notes/text with ease. `avae` read the changelog file from top to bottom and create release file from it. `avae` relies on version tags in the changelog as the parsing boundary. The version tags should follow sermantic versioning (`vX.Y.Z`).
+<br>
 
-[![Test](https://github.com/zhid0399123/peni/actions/workflows/continue-integration.yml/badge.svg)](https://github.com/zhid0399123/peni/actions/workflows/continue-integration.yml)
-[![Publish](https://github.com/zhid0399123/peni/actions/workflows/continue-deployment.yml/badge.svg)](https://github.com/zhid0399123/peni/actions/workflows/continue-deployment.yml)
-[![npm](https://img.shields.io/npm/v/peni.svg?style=flat-square&color=default)](https://www.npmjs.com/package/peni)
-[![npm](https://img.shields.io/npm/dt/peni.svg?style=flat-square&color=default)](https://www.npmjs.com/package/peni)
-[![License](https://img.shields.io/github/license/zhid0399123/peni.svg?style=flat-square&color=default)](https://opensource.org/licenses/MIT)
+[![Test](https://github.com/zhid0399123/avae/actions/workflows/continue-integration.yml/badge.svg)](https://github.com/zhid0399123/avae/actions/workflows/continue-integration.yml)
+[![Publish](https://github.com/zhid0399123/avae/actions/workflows/continue-deployment.yml/badge.svg)](https://github.com/zhid0399123/avae/actions/workflows/continue-deployment.yml)
+[![npm](https://img.shields.io/npm/v/avae.svg?style=flat-square&color=default)](https://www.npmjs.com/package/avae)
+[![npm](https://img.shields.io/npm/dt/avae.svg?style=flat-square&color=default)](https://www.npmjs.com/package/avae)
+[![License](https://img.shields.io/github/license/zhid0399123/avae.svg?style=flat-square&color=default)](https://opensource.org/licenses/MIT)
 [![js-standard-style](https://img.shields.io/badge/style-standard-brightgreen.svg?style=flat)](https://standardjs.com/)
+<br>
 
 ## Installation
 
-To install `peni` into your project, run:
+To install `avae` into your project, run:
 
 ```bash
-npm i peni
+npm i avae
 ```
 
-> NOTE: peni is also available as a command line interface which enables you to generate release notes effortlessly from the terminal. To install peni cli run:
+> NOTE: avae is also available as a command line interface which enables you to generate release notes effortlessly from the terminal. To install avae cli run:
 
 ```bash
-npm i -g peni
+npm i -g avae
 ```
 
 For available commands, run:
 
 ```bash
-peni help
+avae help
 ```
 
 ## Example
 
-To use it in your npm project, configure `peni` in your package.json file by running the following command:
+To use it in your npm project, configure `avae` in your package.json file by running the following command:
 
 ```bash
-npm pkg set scripts.peni=peni
+npm pkg set scripts.avae=avae
 ```
 
 To generate release text later on, run:
 
 ```bash
-npm run peni
+npm run avae
 
 ```
 
 Above command will read `CHANGELOG.md` and generate `RELEASE.md` file in the root directory of the project. By default, the file to read from is `CHANGELOG.md` and output file to write to is `RELEASE.md`
 
-Optionally, you can import peni into your javascript file and create release text by calling `createReleasetText` function.
+Optionally, you can import avae into your javascript file and create release text by calling `createReleasetText` function.
 
 ```js
-import * as createReleasetText from "peni"
+import * as createReleasetText from "avae"
 
 const read = path.join(__dirname, "CHANGELOG.md")
 const out = path.join(__dirname, "RELEASE.md")
@@ -68,33 +70,33 @@ terminal logs:
 
 ## Options
 
-To customize the default behaviour of peni, you can pass several options when runing peni.
+To customize the default behaviour of avae, you can pass several options when runing avae.
 
 1: `--read<path> || -r<path>` <br>
-Specify the dir/filename path from which peni should read from. Example:
+Specify the dir/filename path from which avae should read from. Example:
 
 ```bash
-npm run peni --read "CHANGELOG.md"
+npm run avae --read "CHANGELOG.md"
 ```
 
 2: `--out<path> || -o<path>`<br>
-Specify the dir/filename path to which peni should output/write. Example:
+Specify the dir/filename path to which avae should output/write. Example:
 
 ```bash
-npm run peni --out "RELEASE.md"
+npm run avae --out "RELEASE.md"
 ```
 
 3: `--count<number> || -c<number>`<br>
 Specify the number of releases that should be written to the output file. Example:
 
 ```bash
-npm run peni --count 1
+npm run avae --count 1
 ```
 
 ## CI/CD
 
-For automation purposes, peni can be used together with `softprops/action-gh-release` to generate release notes on tags push.
-Below is the workflow example that impliment `peni` and `softprops/action-gh-release` to generate release notes.
+For automation purposes, avae can be used together with `softprops/action-gh-release` to generate release notes on tags push.
+Below is the workflow example that impliment `avae` and `softprops/action-gh-release` to generate release notes.
 
 ```yaml
 name: Release
@@ -127,7 +129,7 @@ jobs:
         npm config set "//registry.npmjs.org/:_authToken" "${NPM_TOKEN}" # pnpm config set is broken
         pnpm release
     - name: Generate release description
-        run: pnpm run peni
+        run: pnpm run avae
     - name: Release
         uses: softprops/action-gh-release@v1
         with:
@@ -144,10 +146,10 @@ Tailor release notes to meet your project's specific requirements using customiz
 
 ## Contributing
 
-We welcome contributions and suggestions to enhance the functionality and robustness of the `peni`. Please refer to the [Contributing Guidelines](https://github.com/zhid0399123/peni/blob/main/CONTRIBUTING.md) to get started.
+We welcome contributions and suggestions to enhance the functionality and robustness of the `avae`. Please refer to the [Contributing Guidelines](https://github.com/zhid0399123/avae/blob/main/CONTRIBUTING.md) to get started.
 
 ## Copyright and license
 
 Copyright (c) 2024 Zidikhery Mchomvu
 
-Licensed under the **[MIT License](https://github.com/zhid0399123/peni/blob/main/LICENSE)**.
+Licensed under the **[MIT License](https://github.com/zhid0399123/avae/blob/main/LICENSE)**.

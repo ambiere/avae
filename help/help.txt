@@ -1,7 +1,7 @@
-peni command line interface available commands are:
+avae command line interface available commands are:
 
     * create    create release notes/text from CHANGELOG.md
-    * version   the current peni cli version
+    * version   the current avae cli version
     * help      help about commands
 
-Launch `peni help [command]` to learn more about each command. 
+Launch `avae help [command]` to learn more about each command. 

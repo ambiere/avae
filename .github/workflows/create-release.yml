@@ -51,7 +51,7 @@ jobs:
         with:
           version: 8
       - name: Generate release description
-        run: pnpm install && pnpm run peni
+        run: pnpm install && pnpm run avae
       - name: Release
         uses: softprops/action-gh-release@v1
         with:

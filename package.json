@@ -1,17 +1,17 @@
 {
-  "name": "peni",
-  "version": "0.4.0",
+  "name": "avae",
+  "version": "0.0.0",
   "description": "Create release notes from changelog.md file",
   "main": "index.js",
   "bin": {
-    "peni": "src/bin.js"
+    "avae": "src/bin.js"
   },
   "scripts": {
     "lint": "standard --verbose",
     "lint:fix": "standard --fix",
     "test": "tap test/**/*.test.js --allow-incomplete-coverage",
     "version": "cz bump",
-    "peni": "peni --count 1",
+    "avae": "avae --count 1",
     "post:version": "conventional-changelog -p conventionalCommits -i CHANGELOG.md -s -r 2 && git add CHANGELOG.md",
     "prepare": "node .husky/install.js"
   },
@@ -27,20 +27,20 @@
   "author": "zhid0399123 <zhid0399123@gmail.com>",
   "license": "MIT",
   "dependencies": {
+    "avae": "^0.0.0",
     "commist": "^3.2.0",
     "help-me": "^5.0.0",
-    "peni": "^0.3.1",
     "split2": "^4.2.0",
     "yargs-parser": "^21.1.1"
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/zhid0399123/peni.git"
+    "url": "git+https://github.com/zhid0399123/avae.git"
   },
   "bugs": {
-    "url": "https://github.com/zhid0399123/peni/issues"
+    "url": "https://github.com/zhid0399123/avae/issues"
   },
-  "homepage": "https://github.com/zhid0399123/peni#readme",
+  "homepage": "https://github.com/zhid0399123/avae#readme",
   "devDependencies": {
     "husky": "^9.0.7",
     "lint-staged": "^15.2.0",

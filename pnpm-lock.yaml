@@ -5,15 +5,15 @@ settings:
   excludeLinksFromLockfile: false
 
 dependencies:
+  avae:
+    specifier: ^0.0.0
+    version: 0.0.0
   commist:
     specifier: ^3.2.0
     version: 3.2.0
   help-me:
     specifier: ^5.0.0
     version: 5.0.0
-  peni:
-    specifier: ^0.3.1
-    version: 0.3.1
   split2:
     specifier: ^4.2.0
     version: 4.2.0
@@ -782,6 +782,17 @@ packages:
     resolution: {integrity: sha512-ooviqdwwgfIfNmDwo94wlshcdzfO64XV0Cg6oDsDYBJfITDz1EngD2z7DkbvCWn+XIMsIqW27sEVF6qcpJrRcg==}
     engines: {node: ^12.20.0 || ^14.13.1 || >=16.0.0}
     dev: true
+
+  /avae@0.0.0:
+    resolution: {integrity: sha512-DBPc6wJpaiZAUWtHf8k6YT+mvxXURIFJQ7xTea8Q8aylY3aZErECMBCo11YRB9V6M5f+oC4NdhINKByO3iugtQ==}
+    engines: {node: '>=18'}
+    hasBin: true
+    dependencies:
+      commist: 3.2.0
+      help-me: 5.0.0
+      split2: 4.2.0
+      yargs-parser: 21.1.1
+    dev: false
 
   /balanced-match@1.0.2:
     resolution: {integrity: sha512-3oSeUO0TMV67hN1AmbXsK4yaqU7tjiHlbxRDZOpH0KW9+CeX4bRAaX0Anxt0tx2MrpRpWwQaPwIlISEJhYU5Pw==}
@@ -1937,17 +1948,6 @@ packages:
       lru-cache: 10.2.0
       minipass: 7.0.4
     dev: true
-
-  /peni@0.3.1:
-    resolution: {integrity: sha512-nl4/oOJ7D1oaLr6NfjJlFJQcaIk9eY6Vt59nQvqotIMABsBBDpJDBM9c+IvB2DA024BQ2L2cyqljNrL4+WvDNg==}
-    engines: {node: '>=18'}
-    hasBin: true
-    dependencies:
-      commist: 3.2.0
-      help-me: 5.0.0
-      split2: 4.2.0
-      yargs-parser: 21.1.1
-    dev: false
 
   /picomatch@2.3.1:
     resolution: {integrity: sha512-JU3teHTNjmE2VCGFzuY8EXzCDVwEqB2a8fsIvwaStHhAWJEeVd1o1QD80CU6+ZdEXXSLbSsuLwJjkCBWqRQUVA==}

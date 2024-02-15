@@ -1,6 +1,6 @@
 {
   "name": "@ambiere/avae",
-  "version": "0.1.1",
+  "version": "0.1.2",
   "description": "Create release notes from changelog.md file",
   "main": "index.js",
   "bin": {

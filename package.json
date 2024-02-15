@@ -1,5 +1,5 @@
 {
-  "name": "avae",
+  "name": "@ambiere/avae",
   "version": "0.1.0",
   "description": "Create release notes from changelog.md file",
   "main": "index.js",

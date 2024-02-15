@@ -1,13 +1,12 @@
 # avae
 
-Streamline the generation of release notes/text from your changelog file effortlessly. Whether you're managing a large-scale project or a smaller development effort, `avae` empowers you to create professional and comprehensive release notes/text with ease. `avae` read the changelog file from top to bottom and create release file from it. `avae` relies on version tags in the changelog as the parsing boundary. The version tags should follow sermantic versioning (`vX.Y.Z`).
+Streamline the generation of release notes/text from your changelog file effortlessly. Whether you're managing a large-scale project or a smaller development effort, `avae` empowers you to create professional and comprehensive release notes/text with ease.
+
+`avae` read the changelog file from top to bottom and create release file from it. `avae` relies on version tags in the changelog as the parsing boundary. The version tags should follow sermantic versioning (`vX.Y.Z`).
 <br>
 
-[![Test](https://github.com/zhid0399123/avae/actions/workflows/continue-integration.yml/badge.svg)](https://github.com/zhid0399123/avae/actions/workflows/continue-integration.yml)
-[![Publish](https://github.com/zhid0399123/avae/actions/workflows/continue-deployment.yml/badge.svg)](https://github.com/zhid0399123/avae/actions/workflows/continue-deployment.yml)
-[![npm](https://img.shields.io/npm/v/avae.svg?style=flat-square&color=default)](https://www.npmjs.com/package/avae)
-[![npm](https://img.shields.io/npm/dt/avae.svg?style=flat-square&color=default)](https://www.npmjs.com/package/avae)
-[![js-standard-style](https://img.shields.io/badge/style-standard-brightgreen.svg?style=flat)](https://standardjs.com/)
+[![Test](https://github.com/ambiere/avae/actions/workflows/continue-integration.yml/badge.svg)](https://github.com/ambiere/avae/actions/workflows/continue-integration.yml)
+[![Publish](https://github.com/ambiere/avae/actions/workflows/continue-deployment.yml/badge.svg)](https://github.com/ambiere/avae/actions/workflows/continue-deployment.yml)
 <br>
 
 ## Installation
@@ -15,13 +14,13 @@ Streamline the generation of release notes/text from your changelog file effortl
 To install `avae` into your project, run:
 
 ```bash
-npm i avae
+npm i @ambiere/avae
 ```
 
 > NOTE: avae is also available as a command line interface which enables you to generate release notes effortlessly from the terminal. To install avae cli run:
 
 ```bash
-npm i -g avae
+npm i -g @ambiere/avae
 ```
 
 For available commands, run:
@@ -145,10 +144,8 @@ Tailor release notes to meet your project's specific requirements using customiz
 
 ## Contributing
 
-We welcome contributions and suggestions to enhance the functionality and robustness of the `avae`. Please refer to the [Contributing Guidelines](https://github.com/zhid0399123/avae/blob/main/CONTRIBUTING.md) to get started.
+Please refer to the [Contributing Guidelines](https://github.com/ambiere/avae/blob/main/CONTRIBUTING.md).
 
-## Copyright and license
+## license
 
-Copyright (c) 2024 Zidikhery Mchomvu
-
-Licensed under the **[MIT License](https://github.com/zhid0399123/avae/blob/main/LICENSE)**.
+Licensed under the **[MIT License](https://github.com/ambiere/avae/blob/main/LICENSE)**.

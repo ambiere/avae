@@ -1,6 +1,6 @@
 {
   "name": "@ambiere/avae",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "description": "Create release notes from changelog.md file",
   "main": "index.js",
   "bin": {
@@ -10,9 +10,7 @@
     "lint": "standard --verbose",
     "lint:fix": "standard --fix",
     "test": "tap test/**/*.test.js --allow-incomplete-coverage",
-    "version": "cz bump",
     "avae": "avae --count 1",
-    "post:version": "conventional-changelog -p conventionalCommits -i CHANGELOG.md -s -r 2 && git add CHANGELOG.md",
     "prepare": "node .husky/install.js"
   },
   "engines": {
@@ -24,10 +22,10 @@
     "changelog",
     "tags"
   ],
-  "author": "zhid0399123 <zhid0399123@gmail.com>",
+  "author": "ambiere <itsambiere@gmail.com>",
   "license": "MIT",
   "dependencies": {
-    "avae": "^0.0.0",
+    "@ambiere/avae": "^0.1.1",
     "commist": "^3.2.0",
     "help-me": "^5.0.0",
     "split2": "^4.2.0",
@@ -35,12 +33,12 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/zhid0399123/avae.git"
+    "url": "git+https://github.com/ambiere/avae.git"
   },
   "bugs": {
-    "url": "https://github.com/zhid0399123/avae/issues"
+    "url": "https://github.com/ambiere/avae/issues"
   },
-  "homepage": "https://github.com/zhid0399123/avae#readme",
+  "homepage": "https://github.com/ambiere/avae#readme",
   "devDependencies": {
     "husky": "^9.0.7",
     "lint-staged": "^15.2.0",

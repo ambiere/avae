@@ -16,6 +16,11 @@
   "engines": {
     "node": ">=18"
   },
+  "files": [
+    "help",
+    "src",
+    "index.js"
+  ],
   "keywords": [
     "releases",
     "notes",
@@ -40,6 +45,7 @@
   },
   "homepage": "https://github.com/ambiere/avae#readme",
   "devDependencies": {
+    "@types/node": "^20.11.25",
     "husky": "^9.0.7",
     "lint-staged": "^15.2.0",
     "tap": "^18.7.0"

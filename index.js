@@ -1,8 +1,19 @@
 const fs = require("fs")
 const split2 = require("split2")
 const argv = require("yargs-parser")
+const path = require("path")
 
-function createReleaseText(filename = "./CHANGELOG.md", output = "RELEASE.md", count = 1) {
+function createReleaseText(path, output = "RELEASE.md", count = 1) {
+  const filename = changelogPath(path)
+  if (!filename) {
+    const error = new Error(`ERROR: The CHANGELOG.md file was not found.
+    Please ensure that you have either specified the --read option with the correct path to the file, 
+    or that the file exists in the root directory of your project with either the filename 'CHANGELOG.md' or 'changelog.md'.
+    `)
+    console.log(error)
+    process.exit(1)
+  }
+
   const set = []
   const fileStream = fs.createReadStream(filename)
   const regex = new RegExp(/^\#+\s+v\d+\.\d+\.\d+.*/, "gim")
@@ -25,7 +36,6 @@ function createReleaseText(filename = "./CHANGELOG.md", output = "RELEASE.md", c
         set.push(data + "\n")
       }
     })
-
     .on("close", function () {
       set.pop()
       fileStream.close()
@@ -41,7 +51,6 @@ function createReleaseText(filename = "./CHANGELOG.md", output = "RELEASE.md", c
         })
       }
     })
-
     .on("error", function (err) {
       throw err
     })
@@ -58,4 +67,15 @@ module.exports.cli = cli
 if (require.main === module) {
   const opts = argv(process.argv)
   createReleaseText(opts.read || opts.r, opts.out || opts.o, opts.count || opts.c)
+}
+
+function changelogPath(filePath) {
+  if (filePath) return filePath
+
+  const changelogPaths = ["changelog.md", "CHANGELOG.md"]
+  for (const changelogPath of changelogPaths) {
+    const fullPath = path.resolve(changelogPath)
+    if (fs.existsSync(fullPath)) return fullPath
+  }
+  return null
 }

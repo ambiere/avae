@@ -1,6 +1,6 @@
 # avae
 
-### [0.1.1-beta]() (2024-03-09)
+### [0.1.3-beta]() (2024-03-09)
 
 ### Bug Fixes
 
@@ -12,7 +12,7 @@
 
 > See [changelog](https://github.com/ambiere/avae/blob/main/CHANGELOG.md).
 
-### [0.1.0-beta]() (2024-01-31)
+### [0.1.0]() (2024-01-31)
 
 Initial beta release of `avae`.<br>
 A npm package that streamline the generation of release notes from your changelog file effortlessly. <br>

@@ -45,7 +45,7 @@
   },
   "homepage": "https://github.com/ambiere/avae#readme",
   "devDependencies": {
-    "@types/node": "^20.11.25",
+    "@types/node": "^22.0.0",
     "husky": "^9.0.7",
     "lint-staged": "^15.2.0",
     "tap": "^21.0.0"
